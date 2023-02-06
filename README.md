@@ -3,17 +3,17 @@
 
 
 ## Run
-### Install
- `npm install`
+### Install Packages 
+### `npm install`
 
 ### Start server 
- `nodemon`
+#### `nodemon`
 
 ## REST APIs
 ### Users
- `User signup  -     POST     /api/users/signup`
-`User login   -     POST     /api/users/login `
-`View profile -     GET     /api/users/me`
-`User logout  -     POST    /api/users/logout`
+### `User signup  -     POST     /api/users/signup`
+### `User login   -     POST     /api/users/login `
+### `View profile -     GET     /api/users/me`
+### `User logout  -     POST    /api/users/logout`
 ### Random joke 
-`Random joke  -  GET     /api/random-joke`
+### `Random joke  -  GET     /api/random-joke`
