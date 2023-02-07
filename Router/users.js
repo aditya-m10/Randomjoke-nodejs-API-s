@@ -23,7 +23,7 @@ router.post(
   "/signup",
   [
     check("name").not().isEmpty().trim().escape(),
-    check("password").not().isEmpty().trim().escape().isLength({min:8}),
+    check("password").not().isEmpty().trim().escape(),
     check("email").isEmail().normalizeEmail(),
   ],
   async (req, res) => {
