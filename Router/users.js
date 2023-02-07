@@ -57,7 +57,7 @@ router.post(
   "/login",
   [   
     check("email").isEmail().normalizeEmail(),
-    check("password").not().isEmpty().trim().escape().isLength({min:8}),
+    check("password").not().isEmpty().trim().escape(),
   ],
 
   async (req, res) => {
