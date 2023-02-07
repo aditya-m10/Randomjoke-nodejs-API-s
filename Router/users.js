@@ -45,7 +45,7 @@ router.post(
         password: bycrpt.hashSync(req.body.password, 10),
       });
       user = await user.save();
-      return res.send({ msg: "Registration Successful", user: user });
+      return res.status(200).send({ msg: "Registration Successful", user: user });
     }
     if (user) {
       return res.status(404).send("User already  Exists ");

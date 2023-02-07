@@ -20,7 +20,7 @@ router.get(`/`, async (req, res) => {
         res.send("An erorr occured");
       } else {
         let joke = JSON.parse(body);
-        res.send({ joke: joke.value });
+        res.status(200).send({ joke: joke.value });
       }
     }
   );
